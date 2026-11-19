@@ -12,3 +12,25 @@ Untitled/
 .env.*
 *.pem
 *.key
+
+# More credential / key file patterns (defense in depth)
+.npmrc
+.netrc
+.git-credentials
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.ppk
+*.ovpn
+*.kdbx
+credentials.json
+secrets.json
+secrets.yaml
+secrets.yml
+.vscode/
+.idea/
