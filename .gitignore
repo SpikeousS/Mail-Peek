@@ -1,0 +1,14 @@
+node_modules/
+.DS_Store
+*.log
+dist/
+store-assets/.DS_Store
+
+# Local scratch / nested repo created during development
+Untitled/
+
+# Local secrets (never commit)
+.env
+.env.*
+*.pem
+*.key

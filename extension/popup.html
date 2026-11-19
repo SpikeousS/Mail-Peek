@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="icons/icon128.png" width="52" height="52" alt="" />
+      <div>
+        <strong>Mail Peek</strong>
+        <p>100% faithful .msg / .eml email preview</p>
+      </div>
+    </header>
+
+    <label class="row">
+      <span>Preview HTML attachments</span>
+      <input type="checkbox" id="previewHtml" />
+    </label>
+    <label class="row">
+      <span>Preview MSG / EML emails</span>
+      <input type="checkbox" id="previewMsg" />
+    </label>
+
+    <footer>
+      Click an email attachment to read it in a popup. Hold <kbd>Shift</kbd> while clicking to download the original file.
+      Zoom with <kbd>Ctrl</kbd>/<kbd>⌘</kbd> <kbd>+</kbd> / <kbd>−</kbd>.
+      The Reply / Reply all / Forward buttons open the email in your default mail app (the app associated with .msg / .eml files).
+    </footer>
+
+    <a
+      class="support"
+      href="https://buymeacoffee.com/spikesu?utm_source=mailpeek&utm_medium=extension&utm_campaign=popup"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="support-icon" aria-hidden="true">☕</span>
+      <span class="support-text">
+        <strong>Enjoying Mail Peek?</strong>
+        <span>Buy me a coffee — it keeps the project going.</span>
+      </span>
+    </a>
+    <script src="popup.js"></script>
+  </body>
+</html>

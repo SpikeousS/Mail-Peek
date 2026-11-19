@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      /* The iframe is sized by its content (see viewer.js reporting width and
+         height), so never clamp mail content here. The parent preview panel is
+         the scroller; a mail wider than the window scrolls horizontally there
+         and images keep their original aspect ratio. */
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        overflow: visible;
+      }
+      body {
+        box-sizing: border-box;
+      }
+      img, video, table, pre {
+        max-width: none;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="viewer.js"></script>
+  </body>
+</html>

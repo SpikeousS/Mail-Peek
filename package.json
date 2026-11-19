@@ -1,0 +1,21 @@
+{
+  "name": "mail-peek",
+  "version": "1.2.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/test-download-interception.mjs && node scripts/test-nbsp-rtf.mjs",
+    "build": "node scripts/build-release.mjs",
+    "build:dev": "esbuild src/msgreader-entry.js --bundle --format=iife --outfile=extension/lib/msgreader.js --alias:iconv-lite=./src/iconv-stub.js",
+    "build:icons": "node scripts/build-icons-from-image.mjs",
+    "build:icons:vector": "node scripts/build-icons.mjs",
+    "zip": "npm run build && cd dist && rm -f mail-peek.zip && zip -r mail-peek.zip mail-peek -x '*.DS_Store'"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "sharp": "^0.35.4"
+  },
+  "dependencies": {
+    "@kenjiuno/msgreader": "^1.28.0"
+  }
+}
