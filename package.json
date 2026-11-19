@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "esbuild": "^0.28.2",
-    "sharp": "^0.35.4"
+    "sharp": "^0.35.5"
   },
   "dependencies": {
     "@kenjiuno/msgreader": "^1.28.0"
